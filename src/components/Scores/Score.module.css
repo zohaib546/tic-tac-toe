@@ -1,0 +1,94 @@
+.scorePanel {
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+}
+
+.scorePanel:hover .playerPanel {
+	opacity: 1;
+}
+
+.scorePanel:hover {
+	cursor: pointer;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+.titleSign {
+	font-weight: bold;
+	margin: 0 2px;
+}
+
+.score {
+	font-size: 50px;
+	margin: 0;
+}
+
+.scoreBox {
+	text-align: center;
+}
+
+.scorePanel.player1 > *:nth-child(1) {
+	opacity: 1;
+}
+
+.scorePanel.player1 > *:nth-child(2) {
+	opacity: 0.5;
+}
+
+.scorePanel.player1 > *:nth-child(3) {
+	opacity: 0.5;
+}
+
+.scorePanel.player2 > *:nth-child(1) {
+	opacity: 0.5;
+}
+
+.scorePanel.player2 > *:nth-child(2) {
+	opacity: 0.5;
+}
+
+.scorePanel.player2 > *:nth-child(3) {
+	opacity: 1;
+}
+
+.playerIcon {
+	width: 30px;
+	height: 30px;
+	display: block;
+}
+
+.playerText {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.playerPanel {
+	text-align: center;
+	opacity: 0.5;
+	transition: all 0.1s;
+}
+
+@media only screen and (max-height: 630px) {
+	.title {
+		font-size: 15px;
+	}
+
+	.score {
+		font-size: 25px;
+	}
+
+	.playerText {
+		font-size: 15px;
+	}
+	.titleSign {
+		font-size: 12px;
+	}
+}
